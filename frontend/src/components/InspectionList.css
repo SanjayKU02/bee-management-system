@@ -1,0 +1,76 @@
+.inspection-list {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.inspections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.inspection-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inspection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.inspection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.inspection-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.inspection-date {
+  color: #667eea;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.inspection-details {
+  margin-bottom: 1.5rem;
+}
+
+.inspection-details .detail-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.inspection-details .detail-item .label {
+  font-weight: 600;
+  color: #667eea;
+  min-width: 140px;
+}
+
+.inspection-details .detail-item.notes {
+  flex-direction: column;
+}
+
+.inspection-details .detail-item.notes span:last-child {
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.inspection-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
