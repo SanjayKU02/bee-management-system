@@ -7,7 +7,8 @@ import HarvestList from './components/HarvestList';
 import HiveForm from './components/HiveForm';
 import InspectionForm from './components/InspectionForm';
 import HarvestForm from './components/HarvestForm';
-import api from './services/api';
+// Use localStorage API for immediate functionality (works without backend)
+import api from './services/api-localStorage';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
